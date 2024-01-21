@@ -30,6 +30,8 @@ const sketch = (p: p5) => {
 
         points.push(p.createVector(x, y, z))
 
+        p.orbitControl()
+
         p.push()
         p.translate(0, 0, -80)
         p.rotateY(p.frameCount * 0.01)
